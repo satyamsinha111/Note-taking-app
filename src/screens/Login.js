@@ -10,7 +10,7 @@ import {
 
 import {Button} from 'native-base';
 
-const Login = () => {
+const Login = ({navigation, route}) => {
   return (
     <ScrollView contentContainerStyle={styles.Container}>
       <View style={styles.FormContainer}>
@@ -46,7 +46,12 @@ const Login = () => {
             }}>
             Or
           </Text>
-          <Button block style={styles.CreateButton}>
+          <Button
+            block
+            style={styles.CreateButton}
+            onPress={() => {
+              navigation.navigate('Register');
+            }}>
             <Text style={{color: '#eee', fontSize: 16, letterSpacing: 1}}>
               Create a new account
             </Text>
