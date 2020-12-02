@@ -1,2 +1,2 @@
-![Screenshot](note_demo.PNG) (<-- two spaces)
+![Screenshot](note_demo.PNG) <br />
 ![Screenshot](register.PNG)
