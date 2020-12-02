@@ -39,8 +39,20 @@ const App = ({authState}) => {
       <Stack.Navigator initialRouteName="Login">
         {!authState.isAuthenticated ? (
           <>
-            <Stack.Screen name="Login" component={Screens.Login} />
-            <Stack.Screen name="Register" component={Screens.Register} />
+            <Stack.Screen
+              name="Login"
+              options={{
+                headerShown: false,
+              }}
+              component={Screens.Login}
+            />
+            <Stack.Screen
+              options={{
+                headerShown: false,
+              }}
+              name="Register"
+              component={Screens.Register}
+            />
           </>
         ) : (
           <>
@@ -53,8 +65,6 @@ const App = ({authState}) => {
     </NavigationContainer>
   );
 };
-
-//check
 
 const mapStateToProps = (state) => ({
   authState: state.auth,
