@@ -12,7 +12,7 @@ const App = ({authState}) => {
   const dispatch = useDispatch();
   const onStateChanged = (user) => {
     //On state changed
-    //Some changes
+    //Some changes done
     if (user) {
       console.log('User is authenticated');
       dispatch({
