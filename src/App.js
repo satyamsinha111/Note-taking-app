@@ -8,7 +8,6 @@ import {useDispatch, connect} from 'react-redux';
 import auth from '@react-native-firebase/auth';
 import {IS_AUTHENTICATED} from './actions/action.type';
 
-//test
 
 const App = ({authState}) => {
   const dispatch = useDispatch();
